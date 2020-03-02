@@ -1,0 +1,588 @@
+
+/*GLOBAL***********/
+
+body {
+	background-color: #fffffc;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 35px;
+	width: 100%;
+	height: 100%;
+	color: #4e4e4e;
+	margin: 0px!important;
+	overflow-x: hidden;
+}
+
+#big-wrap {
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+}
+
+#age-gate-1 {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background-color: #efefef;
+	z-index: 1000;
+}
+
+#age-gate-1 div {
+	width: 80%;
+	position: absolute;
+	top: 20%;
+	left: auto;
+	margin-left: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*#age-gate-1 img {
+	width: 90px;
+	margin-bottom: 40px;
+	transform: rotate(-40deg);
+	animation: rotation 20s infinite linear;
+}*/
+
+#age-gate-1 img {
+	width: 90px;
+	margin-bottom: 40px;
+	-webkit-animation: rotation 60s infinite linear;
+	-moz-transform:rotate(360deg); 
+    -o-transform:rotate(360deg);
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(-45deg);
+		}
+		to {
+				-webkit-transform: rotate(60deg);
+		}
+}
+
+#age-gate-1 h2 {
+	text-align: center;
+	margin-bottom: 40px;
+	font-weight: 400;
+}
+
+#age-gate-1 div button {
+	width: 140px;
+}
+
+/*#age-gate-2 {
+	display: none;
+}*/
+
+.dark-text {
+	color: #4e4e4e;
+}
+
+.white-text {
+	color: white;
+}
+
+h2 {
+	font-size: 38px;
+}
+
+.slide {
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	position: relative;
+}
+
+.slide2 {
+	width: 100vw;
+	height: 80vh;
+	background-size: cover;
+	position: relative;
+}
+
+.container {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.center {
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+}
+
+button a:visited {
+	text-decoration: none;
+	color: #4e4e4e;
+}
+
+button {
+	height: 50px;
+	border-width: 2.5px;
+	background: none;
+	border-radius: 6px;
+	color: #4e4e4e;
+	font-size: 16px;
+	display: block;
+	border-color: #4e4e4e;
+	font-weight: 600;
+	font-family: 'Dosis';
+	padding: 10px 25px 10px 25px;
+}
+
+button:hover {
+	background-color: #4e4e4e;
+	color: white;
+	cursor: pointer;
+}
+
+/*SLIDES*************/
+
+#title {     
+	background-image: url(
+		../images/split-bottles.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#nav {
+	position: absolute;
+	width: 100%;
+	top: 17px;
+	display: inline-flex;
+	justify-content: center;
+	z-index: 999;
+}
+
+#nav a {
+	display: block;
+}
+
+#nav img {
+	width: 50px;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	/*animation: rotation 18s infinite linear;*/
+}
+
+#nav img:hover {
+	cursor: pointer;
+}
+
+.home-link {
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -25px;
+	z-index: 999;
+}
+
+#nav-spirits {
+	margin-right: 10px;
+}
+
+#dark-nav p{
+	color: #333;
+}
+
+.dropdown {
+	position: relative;
+	width: 200px;
+	text-align: center;
+}
+
+.dropdown p {
+	text-decoration: none;
+	display: block;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+.dropdown-content {
+	color: white;
+	position: absolute;
+	background: rgba(192,192,192, 0.75);;
+	font-size: 14px;
+	font-weight: bold;
+	overflow: hidden;
+	height: 0px;
+	transition: height .5s ease-out;
+	display: block;
+	width: 140px;
+	letter-spacing: 1.5px;
+	border-radius: 2px;
+	margin-left: 30px;
+}
+
+.dopdown-content a {
+	color: white;
+	width: 100px;
+	padding-top: 10px;
+}
+
+.dropdown-content > :first-child {
+	margin-top: 7px;
+}
+
+.dopdown-content a:visited {
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  height: 120px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.gif-bg {
+	background-image: url(
+		../images/drone3.gif);
+}
+
+#gif {
+	text-align: center;
+}
+
+#gif h2 {
+	letter-spacing: 3px;
+	font-weight: 600;
+}
+
+.story {
+	width: 80%;
+	margin-bottom: 40px;
+}
+
+
+.story h2 {
+	margin: 50px 0 0px 0px;
+	font-size: 28px;
+}
+
+.story p:nth-child(2) {
+	margin: 40px 0 0px 0px;
+}
+
+.story p {
+	margin: 20px 0 0px 0px;
+	font-family: 'LT';
+}
+
+.story button {
+	margin: 40px 0 40px 0;
+}
+
+.right-img {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.left-img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.right-text {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.right-text:first-child {
+	margin-top: 100px;
+}
+
+.right-text > * {
+	margin: 15px 30px 0 0;
+}
+
+/*VARIETIES*/
+
+.variety {
+	width: 33.333%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: none;
+	background-position: center;
+	position: relative;
+}
+
+#varieties {
+	height: 100vh;
+	flex-direction: row;
+}
+
+.attributes {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	height: 190px;
+}
+
+.attributes p {
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: -10px;
+}
+
+/*.attributes > * {
+	display: block;
+	width: 60%;
+}*/
+
+#split-ny {
+	background:url(
+		../images/split-ny-tall3.png);
+	background-size: cover;
+	background-repeat: none;
+	background-position: 59% 0;
+	color: #be7865;
+}
+
+#split-ny .attributes button {
+	border-color: #be7865;
+	margin: 20px 0 40px 0;
+	color: #be7865;
+}
+
+#split-ny .attributes button:hover {
+	background-color: #be7865;
+	color: #162d59;
+	cursor: pointer;
+}
+
+#split-il {
+	background:url(
+		../images/split-il-tall3.png);
+	background-size: cover;
+	background-repeat: none;
+	background-position: 59% 0;
+	color: #111110;
+}
+
+#split-il .attributes button {
+	border-color: #111110;
+	margin: 20px 0 40px 0;
+	color: #111110;
+	font-weight: 600;
+}
+
+#split-il .attributes button:hover {
+	background-color: #111110;
+	color: #d7ba80;
+	cursor: pointer;
+}
+
+#split-vt {
+	background:url(
+		../images/split-vt-tall3.png);
+	background-size: cover;
+	background-repeat: none;
+	background-position: 59% 0;
+	color: #dfcf96;
+}
+
+#split-vt .attributes button {
+	border-color: #dfcf96;
+	margin: 20px 0 40px 0;
+	color: #dfcf96;
+	font-weight: 600;
+}
+
+#split-vt .attributes button:hover {
+	background-color: #dfcf96;
+	color: #1f4c34;
+	cursor: pointer;
+}
+
+#address h2  {
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+#address a {
+	margin: 0px 0 20px 0;
+	font-family: "dosis";
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #4e4e4e;
+	display: block;
+}
+
+#address a:visited {
+	color: #4e4e4e;
+}	
+
+#address img {
+	width: 40px;
+}
+
+
+/*PAGES*****************/
+
+.content {
+	margin: 10px 0 0 10px;
+	position: relative;
+}
+
+.content > p {
+	margin-bottom: 10px;
+}
+
+.content h1 {
+	margin-bottom: 20px;
+}
+
+.content h2 {
+	margin-bottom: 40px;
+	font-weight:700;
+	margin-top: -15px;
+}
+
+.content p {
+	width: 80%
+}
+
+.wrapper p {
+	display: block;
+	width: 40%;
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+
+.wrapper p span {
+	font-size: 24px;
+	font-weight: bolder;
+}
+
+strong {
+	font-weight: bolder;
+}
+
+.wrapper img {
+	width: 40%;
+	margin-bottom: 40px;
+	border-radius:6px;
+}
+
+.wrapper:last-child {
+	margin-bottom: 60px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.spacer {
+	height: 80px;
+}
+
+.next-link {
+	position: absolute;
+	bottom: 40px;
+	right: 5%;
+	font-size: 18px;
+	text-decoration: none;
+	display: block;
+	height: 50px;
+}
+
+#made-button button {
+	color: white;
+	margin-top: 60px;
+	border-color: white;
+	font-weight: 800;
+}
+
+#made-button button:hover {
+	color: black;
+	background-color: white;
+	/*border-style: dotted;
+	border-radius: .1px;
+	background-color: transparent;
+	border-width: 3px;*/
+}
+
+/*mobile******************/
+
+@media only screen and (max-width: 600px) {
+	.slide {
+		height: 50vh;
+	}
+
+	#nav {
+	position: absolute;
+	width: 100%;
+	top: 5px;
+	left: 0%;
+	margin-left: 0px;
+	font-size: 12px;
+	}
+
+	#nav img {
+		width: 40px;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	#varieties {
+		height: 300vh;
+		flex-direction: column;
+	}
+
+	.variety {
+		width: 100%;
+	}
+	
+	.wrapper p {
+		width: 80%
+	}
+
+	.wrapper img {
+		width: 80%;
+	}
+
+	.dropdown-content {
+		margin-left: 10px;
+	}
+
+	#gif h2 {
+		margin-top: 60px;
+	}
+
+	#made-button {
+		margin-top: -40px;
+	}
+}	
